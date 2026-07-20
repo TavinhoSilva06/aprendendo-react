@@ -1,5 +1,6 @@
 type Props = {
     title: String;
+    descricao: String;
 }
 
 function Header(props: Props) {
@@ -11,6 +12,12 @@ function Header(props: Props) {
             props.title
            }
         </h1>
+
+         <h2 className="h2-azul">
+            {
+                props.descricao
+            }
+        </h2>
         </>
     )
 }

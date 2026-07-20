@@ -14,7 +14,7 @@ function Home() {
 
   return (
     <>
-       <Header title="Hello new world" />
+       <Header title="Hello new world" descricao="teste" />
       <button onClick={btnClick}> Clique aqui</button>
       <p> {contador} Cliques! </p>
       <Link to="/Cadastro"> Ir para a página de cadastro </Link>
