@@ -1,9 +1,10 @@
-import "./App.css"
+import "./Home.css"
 
 import { useState } from "react";
-import Header from "./Header"
+import Header from "../components/Header"
+import { Link } from "react-router-dom";
 
-function App() {
+function Home() {
 
   const [contador, setContador] = useState<number>(0);
 
@@ -14,11 +15,11 @@ function App() {
   return (
     <>
        <Header title="Hello new world" />
-       <Header title="Hello Another new world" />
       <button onClick={btnClick}> Clique aqui</button>
       <p> {contador} Cliques! </p>
+      <Link to="/Cadastro"> Ir para a página de cadastro </Link>
     </>
   )
 }
 
-export default App
+export default Home
